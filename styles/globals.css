@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+  background: #000000 !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  
+}
+
+h4 {
+  margin: 10px 5px;
+  font-size: 16px;
+  font-weight: 500;
+  min-height: 40px;
+  line-height: 25px;
+}
+
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 1rem;
+  background-color: #000000;
+}
+
+.video-container {
+  width: 300px;
+  margin-bottom: 1.5rem;
+  background-color: rgb(239 239 239);
+  border-radius: 5px;
+  transition: all .5s ease-out;
+}
+
+.video-container:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);  
+  transform: scale(1.1);
+  color: rgb(0, 0, 0);
+  transition: all .5s ease-out;
+  z-index: 100;
+}
+
+.video-box {
+  width: 100%;
+  height: 190px;
+  background-color: black;
+  border-radius: 5px 5px 0 0;
+  transition: all .5s ease-out;
+}
+
+.video-page {
+  background-color: #000000;
+}
+
+.video-page video {
+  width: 100%;
+  height: 99vh;
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+/* .video-box:hover {
+  background-color: aliceblue;
+  transition: all .5s ease-out;
+  z-index: 1000;
+} */
+
+h4 a {
+  color: #000000 !important;
+  word-wrap: break-word;
+  font-family: sans-serif;
+  font-size: 14px;
+  text-decoration: none !important;
+}
+
+.edit-icon {
+  width: 25px;
+  height: 25px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+}
+
+.span-type {
+  position: absolute;
+    left: 10px;
+    top: 5px;
+    z-index: 1;
+    border-radius: 8px;
+    background: #ff4a00cc;
+    padding: 0 5px;
+    color: white;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 450px) {
+  .container {
+    justify-content: space-evenly;
+  }
+
+  .video-container {
+    width: 100%;
+  }
+
+  .video-container:hover { 
+    transform: scale(1.05);
+  }
+
+  .video-box {
+    height: 245px;
+  }
+  
+  video {
+    width: 100% !important;
+    height: 240px !important;
+    border-radius: 5px 5px 0 0;
+  }
+
+  img {
+    width: 100% !important;
+    height: 245px !important;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .video-page video {
+    height: 100vh !important;
+  }
+}
